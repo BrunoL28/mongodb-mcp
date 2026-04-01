@@ -17,7 +17,7 @@ Um servidor Model Context Protocol (MCP) para interagir com bancos de dados Mong
 
 ## Overview
 
-O **MongoDB MCP Server** foi construído sob o padrão oficial do [Model Context Protocol](https://modelcontextprotocol.io/) da Anthropic, focado em permitir que os assistentes conversem intimamente com seu banco de dados MongoDB. Originalmente voltado para abstrações da AWS (DocumentDB) de catálogos de produto, o módulo foi refatorado e expandido para uso geral no MongoDB.
+O **MongoDB MCP Server** foi construído sob o padrão oficial do [Model Context Protocol](https://modelcontextprotocol.io/) da Anthropic, focado em permitir que os assistentes conversem intimamente com seu banco de dados MongoDB. Com essa ferramenta, é possível realizar queries em linguagem natural, um grande facilitador para o cotidiano e para que pessoas não técnicas possam acessar dados importantes e tirar dali insights potencializados pela IA.
 
 Com este MCP em execução localmente, a IA conectada a ele ganha o superpoder de ler schemas automaticamente lendo instâncias reais ("Virtual Resources"), rodar complexos pipelines de agregação, diagnosticar lentidões, sugerir tipagens TypeScript, além da capacidade de ler, criar, modificar, buscar e remover dados de dentro de coleções do banco e ajustar índices das colunas.
 
