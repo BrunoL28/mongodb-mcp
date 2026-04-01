@@ -1,0 +1,54 @@
+{
+  "name": "mongodb-mcp",
+  "version": "1.0.0",
+  "description": "MCP server to interact with the mongodb database and perform basic operations. The module has some specifications, based on the business rule we are working on, to manage product catalogs.",
+  "keywords": [
+    "document-db",
+    "amazon",
+    "aws",
+    "amazon-web-services",
+    "claude",
+    "claude-ai",
+    "ai",
+    "claude-desktop",
+    "claude-code",
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol",
+    "mongodb"
+  ],
+  "bin": {
+    "mongodb-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "seed": "tsx src/seed.ts"
+  },
+  "homepage": "https://github.com/bruno-soares-meerkat/mongodb-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/bruno-soares-meerkat/mongodb-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruno-soares-meerkat/mongodb-mcp.git"
+  },
+  "license": "MIT",
+  "author": "Bruno Lima Soares",
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "shx": "^0.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "mongodb": "^6.15.0"
+  }
+}
