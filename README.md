@@ -92,23 +92,32 @@ mongodb-mcp/
 ### 2. Instalação e Compilação
 Faça o clone ou setup do seu local, e execute:
 ```bash
+pnpm install
+pnpm run build
+```
+ou
+```bash
 npm install
 npm run build
 ```
+ou
+```bash
+bun install
+bun run build
+```
 
 ### 3. Rodar via CLI individual
-Você rodará o servidor via Node apontando para a sua string de conexão na AWS ou Localmente.
+Você rodará o servidor via Node apontando para a sua string de conexão na AWS, Mongo Compass ou Localmente.
 ```bash
 node dist/index.js "mongodb://usuario:senha@localhost:27017/meudb"
 ```
 
-### 4. Integração no `claude_desktop_config.json`
-Se estiver usando o aplicativo oficial da Anthropic Desktop, coloque toda essa string de invocação:
-**Arquivo**: `%APPDATA%/Claude/claude_desktop_config.json` (Windows) ou `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac):
+### 4. Integração com LLMs
+Se estiver usando o aplicativo oficial da Anthropic Desktop, ou outra IDE com suporte à MCPs, coloque toda a string de conexão:
 ```json
 {
   "mcpServers": {
-    "meu-banco-mongodb": {
+    "BrunoL28/mongodb-mcp": {
       "command": "node",
       "args": [
         "C:/Caminho/Absoluto/Para/Seu/Repositorio/mongodb-mcp/dist/index.js",
